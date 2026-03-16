@@ -1,0 +1,21 @@
+{
+  "name": "Osindo Mechanical Services",
+  "short_name": "Osindo",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#03080b",
+  "theme_color": "#040c0f",
+  "description": "Osindo Mechanical Services delivers honest HVAC, automotive, and general repairs across Minnesota with seasonal availability.",
+  "icons": [
+    {
+      "src": "assets/main-logo.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "assets/alt-logo.jpeg",
+      "sizes": "256x256",
+      "type": "image/jpeg"
+    }
+  ]
+}
