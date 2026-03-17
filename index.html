@@ -1,476 +1,591 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Osindo Mechanical Services | HVAC · Auto · General Repair</title>
-  <meta name="description" content="Osindo Mechanical Services delivers honest HVAC, automotive, and general repair solutions across Minnesota with seasonal availability and transparent pricing." />
-  <meta name="keywords" content="Osindo Mechanical Services, Minnesota HVAC, automotive repair, furnace maintenance, AC diagnosis, brake jobs, mobile mechanic" />
-  <meta name="author" content="Osindo Mechanical Services" />
-  <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#040c0f" />
+  <meta name="description" content="Osindo Mechanical Services provides diagnostics-first HVAC, automotive, and general mechanical repairs across the Twin Cities with transparent scopes and portal-based communication." />
+  <meta name="keywords" content="Osindo Mechanical Services, Minnesota HVAC, automotive repair, mechanical contractor, Twin Cities" />
   <link rel="canonical" href="https://osindo.us" />
-  <link rel="icon" type="image/png" href="assets/favicon.png" />
-  <link rel="manifest" href="manifest.json" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Osindo Mechanical Services | HVAC · Auto · General Repair" />
-  <meta property="og:description" content="Certified HVAC technician and automotive specialist offering honest, seasonal mechanical services throughout Minnesota." />
+  <meta property="og:title" content="Osindo Mechanical Services" />
+  <meta property="og:description" content="Diagnostics, documentation, and honest repair service for HVAC, vehicles, and mechanical projects in Minneapolis / St. Paul." />
   <meta property="og:url" content="https://osindo.us" />
   <meta property="og:image" content="https://osindo.us/assets/main-logo.jpeg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Osindo Mechanical Services" />
-  <meta name="twitter:description" content="HVAC, automotive, and general repair work with transparent pricing in Minnesota." />
-  <meta name="twitter:image" content="https://osindo.us/assets/main-logo.jpeg" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="manifest" href="manifest.json" />
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Karla:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Icon Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+
+  <!-- Libraries -->
+  <link rel="stylesheet" href="lib/animate/animate.min.css" />
+  <link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css" />
+
+  <!-- Theme Styles -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "HVACBusiness",
       "name": "Osindo Mechanical Services",
-      "image": "https://osindo.us/assets/main-logo.jpeg",
       "url": "https://osindo.us",
-      "address": {
-        "@type": "PostalAddress",
-        "addressRegion": "MN",
-        "addressCountry": "US"
-      },
+      "logo": "https://osindo.us/assets/main-logo.jpeg",
       "priceRange": "$$",
-      "description": "Certified residential HVAC technician offering automotive and general repair services with transparent pricing across Minnesota.",
-      "areaServed": "Minnesota",
+      "areaServed": "Minneapolis-Saint Paul",
+      "telephone": "+16514173363",
       "serviceType": [
-        "HVAC diagnosis",
-        "Furnace maintenance",
-        "Automotive repairs",
-        "General mechanical consulting"
-      ],
-      "sameAs": [
-        "https://osindo.us"
+        "HVAC diagnostics",
+        "Automotive repair",
+        "General mechanical projects"
       ]
     }
   </script>
 </head>
+
 <body>
-  <div class="texture"></div>
-  <header class="site-header">
-    <div class="header-row">
-      <div class="brand-block">
-        <img src="assets/main-logo.jpeg" alt="Osindo Mechanical Services logo" class="brand__logo" loading="lazy" />
-        <div>
-          <p class="badge">Minnesota</p>
-          <h1>Osindo Mechanical Services</h1>
-          <p class="subheading">HVAC · Automotive · Mechanical problem solving</p>
+  <!-- Spinner -->
+  <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-grow text-primary" role="status"></div>
+  </div>
+
+  <!-- Topbar -->
+  <div class="container-fluid bg-dark text-white-50 py-2 px-0 d-none d-lg-block">
+    <div class="row gx-0 align-items-center">
+      <div class="col-lg-8 px-5 text-start">
+        <div class="h-100 d-inline-flex align-items-center me-4">
+          <small class="fa fa-phone-alt me-2"></small>
+          <small>(651) 417-3363</small>
+        </div>
+        <div class="h-100 d-inline-flex align-items-center me-4">
+          <small class="far fa-envelope-open me-2"></small>
+          <small>support@osindo.us</small>
+        </div>
+        <div class="h-100 d-inline-flex align-items-center">
+          <small class="fa fa-map-marker-alt me-2"></small>
+          <small>Twin Cities · Minnesota</small>
         </div>
       </div>
-      <div class="header-cta">
-        <span class="rating-chip">⭐ 4.9/5 · Twin Cities homeowners</span>
-        <a class="header-phone" href="tel:6514173363">(651) 417-3363</a>
-        <a class="button outline" href="https://osindosmechanicalservices.myassembly.com/login?step=signUp" target="_blank" rel="noopener">Customer portal</a>
+      <div class="col-lg-4 px-5 text-end">
+        <ol class="breadcrumb justify-content-end mb-0">
+          <li class="breadcrumb-item"><a class="text-white-50 small" href="#privacy">Privacy</a></li>
+          <li class="breadcrumb-item"><a class="text-white-50 small" href="#terms">Terms</a></li>
+          <li class="breadcrumb-item"><a class="text-white-50 small" href="https://osindosmechanicalservices.myassembly.com/login?step=signUp" target="_blank" rel="noopener">Portal</a></li>
+        </ol>
       </div>
     </div>
-    <div class="header-row nav-row">
-      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
+    <a href="#home" class="navbar-brand d-flex align-items-center">
+      <img src="assets/main-logo.jpeg" alt="Osindo Mechanical Services logo" class="img-fluid me-3" style="width: 54px; height: 54px; object-fit: cover; border-radius: 12px;" />
+      <h1 class="m-0">Osindo Mechanical</h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav mx-auto bg-light pe-4 py-3 py-lg-0">
+        <a href="#home" class="nav-item nav-link active">Home</a>
+        <a href="#about" class="nav-item nav-link">About</a>
+        <a href="#services" class="nav-item nav-link">Services</a>
+        <a href="#process" class="nav-item nav-link">Process</a>
+        <a href="#map" class="nav-item nav-link">Service Area</a>
+        <a href="#faq" class="nav-item nav-link">FAQ</a>
+        <a href="#contact" class="nav-item nav-link">Contact</a>
+      </div>
+      <div class="d-none d-lg-inline-flex align-items-center">
+        <a class="btn btn-primary py-2 px-4" href="https://osindosmechanicalservices.myassembly.com/login?step=signUp" target="_blank" rel="noopener">Customer Portal</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Carousel -->
+  <div id="home" class="container-fluid p-0 mb-5">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="hero-slide bg-gradient position-relative">
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-lg-8 pt-5">
+                    <p class="text-uppercase text-white-50 mb-3">Diagnostics-first mechanical services</p>
+                    <h1 class="display-4 text-white mb-4">HVAC, automotive, and mechanical solutions for unpredictable Minnesota weather.</h1>
+                    <p class="fs-5 text-body mb-4 pb-2 mx-sm-5">Detailed intake, transparent pricing, and photo documentation delivered through the Osindo customer portal.</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                      <a href="https://osindosmechanicalservices.myassembly.com/login?step=signUp" target="_blank" rel="noopener" class="btn btn-primary py-3 px-5">Launch Customer Portal</a>
+                      <a href="tel:6514173363" class="btn btn-outline-light py-3 px-5">Call (651) 417-3363</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero-badges text-white d-flex flex-wrap justify-content-center gap-2 mt-3">
+              <span class="badge bg-light text-primary">$10 travel fee</span>
+              <span class="badge bg-light text-primary">Twin Cities coverage</span>
+              <span class="badge bg-light text-primary" id="season-status">Prioritizing seasonal services</span>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="hero-slide bg-gradient-alt position-relative">
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-lg-8 pt-5">
+                    <p class="text-uppercase text-white-50 mb-3">Portal-first communication</p>
+                    <h1 class="display-4 text-white mb-4">Describe the issue once. Receive a scoped plan, timeframe, and bill of materials.</h1>
+                    <p class="fs-5 text-body mb-4 pb-2 mx-sm-5">Serving homeowners, drivers, and small fleets with mobile diagnostics and on-site repair.</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                      <a href="#services" class="btn btn-primary py-3 px-5">Explore Services</a>
+                      <a href="#map" class="btn btn-outline-light py-3 px-5">View Service Area</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero-badges text-white d-flex flex-wrap justify-content-center gap-2 mt-3">
+              <span class="badge bg-light text-primary">HVAC · Auto · Mechanical</span>
+              <span class="badge bg-light text-primary">EPA & ASE experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
       </button>
-      <nav class="main-nav" aria-label="Primary">
-        <a href="#services">Services</a>
-        <a href="#hvac">HVAC</a>
-        <a href="#auto">Auto</a>
-        <a href="#general">General</a>
-        <a href="#service-area">Service Area</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact" class="cta-link">Contact</a>
-      </nav>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-  </header>
+  </div>
 
-  <main>
-    <section class="hero">
-      <div class="hero__main">
-        <div class="hero__content">
-          <div class="hero__domain">
-            <span class="eyebrow">Trusted by Twin Cities families</span>
-            <a href="https://osindo.us" target="_blank" rel="noopener">OSINDO.us</a>
+  <!-- About -->
+  <div id="about" class="container-xxl py-5">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+          <p class="text-primary text-uppercase mb-2">Osindo Mechanical Services</p>
+          <h2 class="display-6 mb-4">Diagnostics, documentation, and trustworthy communication.</h2>
+          <p class="mb-4">Each job begins inside the customer portal, capturing photos, urgency, and scheduling preferences. That intake powers a scoped plan, transparent pricing, and the parts list you approve before service.</p>
+          <div class="row g-4 mb-4">
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center">
+                <div class="btn-lg-square bg-primary rounded-circle me-3">
+                  <i class="fa fa-tools text-white"></i>
+                </div>
+                <div>
+                  <h5 class="mb-1">Mobile HVAC lab</h5>
+                  <small>Combustion, airflow, and refrigerant logging every visit.</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center">
+                <div class="btn-lg-square bg-primary rounded-circle me-3">
+                  <i class="fa fa-car-battery text-white"></i>
+                </div>
+                <div>
+                  <h5 class="mb-1">Driveway auto care</h5>
+                  <small>Electrical, brake, and maintenance work on-site.</small>
+                </div>
+              </div>
+            </div>
           </div>
-          <h2>Mechanical care that keeps homes comfortable and vehicles road-ready.</h2>
-          <p>
-            Diagnostics-first HVAC, automotive, and repair work for unpredictable Minnesota weather. Detailed scopes, upfront pricing,
-            and photo documentation every time.
-          </p>
-          <div class="hero__cta">
-            <a href="https://osindosmechanicalservices.myassembly.com/login?step=signUp" target="_blank" rel="noopener" class="button primary">Start in Customer Portal</a>
-            <a href="tel:6514173363" class="button ghost">Call (651) 417-3363</a>
-          </div>
-          <div class="hero__stats">
-            <div>
-              <p class="stat-heading">$10</p>
-              <p class="stat-label">Flat travel fee</p>
-            </div>
-            <div>
-              <p class="stat-heading">24 hr</p>
-              <p class="stat-label">Average response</p>
-            </div>
-            <div>
-              <p class="stat-heading">3</p>
-              <p class="stat-label">Core service tracks</p>
+          <div class="border-top mt-4 pt-4">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center">
+                  <div class="btn-lg-square bg-primary rounded-circle me-3">
+                    <i class="fa fa-phone-alt text-white"></i>
+                  </div>
+                  <h5 class="mb-0">(651) 417-3363</h5>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center">
+                  <div class="btn-lg-square bg-primary rounded-circle me-3">
+                    <i class="fa fa-external-link-alt text-white"></i>
+                  </div>
+                  <a class="fw-semibold" href="https://osindosmechanicalservices.myassembly.com/login?step=signUp" target="_blank" rel="noopener">Customer portal →</a>
+                </div>
+              </div>
             </div>
           </div>
-          <ul class="hero__highlights">
-            <li><span aria-hidden="true">✔</span><span>Mobile visits start at <strong>$10</strong></span></li>
-            <li><span aria-hidden="true">✔</span><span>Priority dispatch during extreme temps</span></li>
-            <li><span aria-hidden="true">✔</span><span>Licensed + insured, fully documented work</span></li>
-          </ul>
         </div>
-        <div class="hero__media">
-          <img src="https://images.unsplash.com/photo-1581093588401-22be9a06d5d7?auto=format&fit=crop&w=1200&q=80" alt="Technician inspecting furnace" loading="lazy" />
-          <div class="hero__media-caption">Precision diagnostics before every repair</div>
-        </div>
-      </div>
-      <div class="hero__panel">
-        <div class="panel-card hero__contact">
-          <h3>Rapid Response Board</h3>
-          <p>Serving Minneapolis / St. Paul metro + nearby communities.</p>
-          <dl>
-            <div>
-              <dt>Today’s focus</dt>
-              <dd id="season-status">Prioritizing seasonal services</dd>
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="row g-3">
+            <div class="col-6 text-end">
+              <div class="icon-card">
+                <img src="img/icon/icon-07-primary.png" alt="Icon" class="img-fluid" />
+                <p>Combustion analysis</p>
+              </div>
             </div>
-            <div>
-              <dt>Average response</dt>
-              <dd><strong>24 hrs</strong> from portal submit</dd>
+            <div class="col-6 text-start">
+              <div class="icon-card">
+                <img src="img/icon/icon-08-primary.png" alt="Icon" class="img-fluid" />
+                <p>Electrical diagnostics</p>
+              </div>
             </div>
-            <div>
-              <dt>Travel fee</dt>
-              <dd>Flat <strong>$10</strong> to roll to you</dd>
+            <div class="col-6 text-end">
+              <div class="icon-card">
+                <img src="img/icon/icon-05-primary.png" alt="Icon" class="img-fluid" />
+                <p>Airflow balancing</p>
+              </div>
             </div>
-          </dl>
-          <a class="button ghost full" href="https://osindosmechanicalservices.myassembly.com/login?step=signUp" target="_blank" rel="noopener">Launch Portal</a>
+            <div class="col-6 text-start">
+              <div class="icon-card">
+                <img src="img/icon/icon-04-primary.png" alt="Icon" class="img-fluid" />
+                <p>Parts sourcing</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <section class="highlights">
-      <article>
-        <img src="https://images.unsplash.com/photo-1503389152951-9f343605f61e?auto=format&fit=crop&w=800&q=80" alt="HVAC tune up" loading="lazy" />
-        <div>
-          <h3>Residential HVAC</h3>
-          <p>Heating and cooling tuned for Minnesota winters and humid summers. We measure airflow, safety, and efficiency on every visit.</p>
-        </div>
-      </article>
-      <article>
-        <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=800&q=80" alt="Auto repair" loading="lazy" />
-        <div>
-          <h3>Driveway Automotive</h3>
-          <p>Brake jobs, electrical diagnostics, belts, fluids, and more—all documented with photos so you know exactly what was serviced.</p>
-        </div>
-      </article>
-      <article>
-        <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=800&q=80" alt="General mechanical" loading="lazy" />
-        <div>
-          <h3>General Repair</h3>
-          <p>Component installs, electrical troubleshooting, and special projects for homes and small fleets with transparent timelines.</p>
-        </div>
-      </article>
-    </section>
-
-    <section class="trust">
-      <p>Licensed & insured · Diagnostics-first · Photo documentation for every job</p>
-      <div class="trust-logos">
-        <span>EPA Certified</span>
-        <span>ASE Experience</span>
-        <span>Twin Cities Local</span>
-      </div>
-    </section>
-
-    <section id="services" class="services-overview">
-      <div class="section-heading">
-        <p class="eyebrow">Our Focused Practice</p>
-        <h2>Three disciplined service tracks built for homeowners, drivers, and small fleets.</h2>
-        <p class="subtext">Every service begins with a detailed intake via the customer portal so we arrive with the right plan and parts.</p>
-      </div>
-      <div class="services__grid">
-        <article class="service-card">
-          <div class="service-icon">AQ</div>
-          <h3>HVAC Systems</h3>
-          <p>Diagnostics, tune-ups, and targeted repairs for furnaces and AC systems with performance data at every visit.</p>
-          <ul>
-            <li>Furnace/boiler safety checks</li>
-            <li>AC charge + airflow verification</li>
-            <li>Heat loss consultation</li>
-          </ul>
-          <a href="#hvac">Explore HVAC</a>
-        </article>
-        <article class="service-card">
-          <div class="service-icon">AUTO</div>
-          <h3>Automotive</h3>
-          <p>Driveway or garage service for maintenance, brakes, belts, diagnostics, and electrical issues.</p>
-          <ul>
-            <li>Brake + suspension refresh</li>
-            <li>Electrical + run-ability diagnostics</li>
-            <li>Fluids, belts, and charging systems</li>
-          </ul>
-          <a href="#auto">Explore Auto</a>
-        </article>
-        <article class="service-card">
-          <div class="service-icon">MECH</div>
-          <h3>General Mechanical</h3>
-          <p>Problem-solving across equipment installs, electrical troubleshooting, and component replacements.</p>
-          <ul>
-            <li>Parts sourcing & install support</li>
-            <li>Electrical troubleshooting</li>
-            <li>Seasonal upgrade planning</li>
-          </ul>
-          <a href="#general">Explore General</a>
-        </article>
-      </div>
-    </section>
-
-    <section class="cta-banner">
-      <div>
-        <p class="eyebrow">Need help fast?</p>
-        <h2>Describe the issue once. I’ll handle the plan, pricing, and scheduling.</h2>
-      </div>
-      <div class="cta-banner__actions">
-        <a class="button primary" href="https://osindosmechanicalservices.myassembly.com/login?step=signUp" target="_blank" rel="noopener">Open Customer Portal</a>
-        <a class="button ghost" href="tel:6514173363">Call (651) 417-3363</a>
-      </div>
-    </section>
-
-    <section id="hvac" class="service-detail">
-      <div class="section-heading">
-        <p class="eyebrow">HVAC</p>
-        <h2>Home comfort tuned for Minnesota winters and humid summers.</h2>
-      </div>
-      <div class="content-grid">
-        <div>
-          <ul>
-            <li>Furnace diagnostics · <strong>$20</strong></li>
-            <li>Preventative maintenance · <strong>$30</strong></li>
-            <li>Heat restoration & repair · <strong>Quote-based</strong></li>
-            <li>AC diagnostics, repairs, refrigerant prep · <strong>Seasonal</strong></li>
-          </ul>
-          <p class="subtext">Every visit includes airflow checks, visual inspection, and detailed recommendations emailed after service.</p>
-        </div>
-        <div class="cta-block">
-          <h3>Ready for a tune-up?</h3>
-          <p>Use the customer portal to describe symptoms, upload photos, and pick an appointment window.</p>
-          <a class="button primary" href="https://osindosmechanicalservices.myassembly.com/login?step=signUp" target="_blank" rel="noopener">Schedule HVAC Service</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="auto" class="service-detail alt">
-      <div class="section-heading">
-        <p class="eyebrow">Automotive</p>
-        <h2>Transparent pricing for driveway-friendly automotive work.</h2>
-      </div>
-      <div class="content-grid">
-        <div>
-          <ul class="price-list">
-            <li><span>Oil change labor</span><strong>$20</strong></li>
-            <li><span>Brake job (per set)</span><strong>$100</strong></li>
-            <li><span>Belt replacement</span><strong>$25</strong></li>
-            <li><span>Engine fluids flush (each)</span><strong>$20</strong></li>
-            <li><span>Electrical / run-ability diag</span><strong>$50-$100</strong></li>
-            <li><span>Alternator install</span><strong>$50-$200</strong></li>
-            <li><span>Battery install</span><strong>$20</strong></li>
-            <li><span>Spark plugs</span><strong>$20-$150</strong></li>
-            <li><span>Water pump (belt driven)</span><strong>$50-$150</strong></li>
-            <li><span>Headlight replacement</span><strong>$5-$20</strong></li>
-            <li><span>Wiper blade motor</span><strong>$50-$150</strong></li>
-          </ul>
-        </div>
-        <div class="cta-block">
-          <h3>Mobile, efficient, documented.</h3>
-          <p>Every repair includes photos and a quick debrief so you understand the fix before payment.</p>
-          <a class="button ghost" href="https://osindosmechanicalservices.myassembly.com/login?step=signUp" target="_blank" rel="noopener">Book Automotive Slot</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="general" class="service-detail">
-      <div class="section-heading">
-        <p class="eyebrow">General Repair</p>
-        <h2>Problem-solving across parts, electrical, and specialty projects.</h2>
-      </div>
-      <div class="content-grid">
-        <div>
-          <ul>
-            <li>Component sourcing & installation</li>
-            <li>Electrical diagnostics for equipment + vehicles</li>
-            <li>Consulting on future upgrades or replacements</li>
-            <li>Referral coordination with trusted specialists</li>
-          </ul>
-        </div>
-        <div class="cta-block">
-          <h3>Scoped weekend projects welcome.</h3>
-          <p>Share goals through the portal and I’ll map out next steps, estimated time, and required parts.</p>
-          <a class="button primary" href="https://osindosmechanicalservices.myassembly.com/login?step=signUp" target="_blank" rel="noopener">Start Project Intake</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="leadflow">
-      <div class="section-heading">
-        <p class="eyebrow">Working Together</p>
-        <h2>A transparent three-step process.</h2>
-      </div>
-      <div class="leadflow__grid">
-        <article>
-          <span class="step">01</span>
-          <h3>Submit</h3>
-          <p>Use the portal to share symptoms, photos, video, and timing preferences. Everything is time-stamped for clarity.</p>
-        </article>
-        <article>
-          <span class="step">02</span>
-          <h3>Diagnose</h3>
-          <p>Receive a written scope with travel fee, labor breakdown, parts options, and estimated timing before committing.</p>
-        </article>
-        <article>
-          <span class="step">03</span>
-          <h3>Repair</h3>
-          <p>Onsite repairs are fully documented with photos and a quick recap so you know exactly what was done.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="testimonials">
-      <div class="section-heading">
-        <p class="eyebrow">Hear From Your Neighbors</p>
-        <h2>Work that earns referrals.</h2>
-      </div>
-      <div class="testimonials__grid">
-        <article>
-          <p>“Heat went out at 9pm—we were up and running the next morning with a full photo recap of what failed.”</p>
-          <span>— A. Larson, Brooklyn Park</span>
-        </article>
-        <article>
-          <p>“Brake job and fluid flush cost exactly what was quoted. I approved the work straight from the portal.”</p>
-          <span>— M. Day, Minneapolis</span>
-        </article>
-        <article>
-          <p>“Electrical gremlins finally solved—Osindo explained the testing process and left me with a maintenance checklist.”</p>
-          <span>— M. Nguyen, St. Paul</span>
-        </article>
-      </div>
-    </section>
-
-    <section id="faq" class="faq">
-      <div class="section-heading">
-        <p class="eyebrow">Questions? I’ve Got You Covered</p>
-        <h2>Need-to-know details before we get started.</h2>
-      </div>
-      <div class="faq__grid">
-        <article>
-          <h3>What areas do you serve?</h3>
-          <p>Minneapolis, St. Paul, and surrounding suburbs with occasional travel outside the metro for larger scopes.</p>
-        </article>
-        <article>
-          <h3>Are you licensed and insured?</h3>
-          <p>Yes—residential HVAC licensed and fully insured for automotive + mechanical work.</p>
-        </article>
-        <article>
-          <h3>Do you offer emergency visits?</h3>
-          <p>Extreme cold/heat calls jump the queue. Submit via the portal and include “urgent” in the notes.</p>
-        </article>
-        <article>
-          <h3>How do I schedule?</h3>
-          <p>Use the customer portal link for fastest service. I reply within 24 hours with available slots.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <div class="section-heading">
-        <p class="eyebrow">Ready To Get Started?</p>
-        <h2>The customer portal is the fastest way to book.</h2>
-        <p class="subtext">Still prefer email? Use the form and expect a response within 24 hours or call <a href="tel:6514173363">(651) 417-3363</a>.</p>
-      </div>
-      <div class="contact__grid">
-        <div class="portal-cta">
-          <h3>Customer Portal</h3>
-          <p>Track messages, upload media, and approve work orders in one place.</p>
-          <a class="button primary" href="https://osindosmechanicalservices.myassembly.com/login?step=signUp" target="_blank" rel="noopener">Open Portal</a>
-        </div>
-        <form class="contact-form">
-          <label>
-            Name
-            <input type="text" name="name" placeholder="Full name" required />
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" placeholder="you@email.com" required />
-          </label>
-          <label>
-            Service focus
-            <select name="service" required>
-              <option value="" disabled selected>Select an option</option>
-              <option value="hvac">HVAC</option>
-              <option value="auto">Automotive</option>
-              <option value="general">General repair</option>
-            </select>
-          </label>
-          <label>
-            Describe the issue
-            <textarea name="message" rows="4" placeholder="What are you experiencing?" required></textarea>
-          </label>
-          <label class="checkbox">
-            <input type="checkbox" required />
-            I understand travel starts at $10 and availability flexes with seasonal demand.
-          </label>
-          <button type="submit" class="button primary">Submit Request</button>
-          <p class="form-status" aria-live="polite"></p>
-        </form>
-      </div>
-    </section>
-
-    <section class="socials">
-      <div class="section-heading">
-        <p class="eyebrow">Stay Connected</p>
-        <h2>Get seasonal checklists and drop-ins.</h2>
-      </div>
-      <div class="socials__grid">
-        <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="social-card" aria-label="Instagram">
-          <span>Instagram</span>
-          <p>Weekend wrenching, HVAC prep shots, and live availability.</p>
-        </a>
-        <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="social-card" aria-label="Facebook">
-          <span>Facebook</span>
-          <p>Neighborhood reminders and emergency slots.</p>
-        </a>
-        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="social-card" aria-label="LinkedIn">
-          <span>LinkedIn</span>
-          <p>Project recaps and mechanical insights.</p>
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-grid">
-      <div>
-        <p class="eyebrow">Osindo Mechanical Services</p>
-        <p>Serving the Twin Cities region with HVAC, automotive, and mechanical repair.</p>
-        <a href="tel:6514173363" class="footer-phone">(651) 417-3363</a>
-      </div>
-      <div>
-        <p class="eyebrow">Quick Links</p>
-        <ul>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#service-area">Service Area</a></li>
-          <li><a href="#legal">Privacy & Terms</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="eyebrow">Customer Portal</p>
-        <a class="button primary" href="https://osindosmechanicalservices.myassembly.com/login?step=signUp" target="_blank" rel="noopener">Open Portal</a>
       </div>
     </div>
-    <p>© <span id="year"></span> Osindo Mechanical Services · Minnesota, USA</p>
-    <p>Availability flexes with seasonal demand and weather conditions.</p>
-  </footer>
+  </div>
+
+  <!-- Facts -->
+  <div class="container-fluid facts my-5 py-5" data-parallax="scroll" data-image-src="img/carousel-1.jpg">
+    <div class="container py-5">
+      <div class="row g-5 text-center">
+        <div class="col-sm-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+          <h1 class="display-4 text-white" data-toggle="counter-up">24</h1>
+          <span class="text-primary">hr average response</span>
+        </div>
+        <div class="col-sm-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+          <h1 class="display-4 text-white" data-toggle="counter-up">3</h1>
+          <span class="text-primary">Core service tracks</span>
+        </div>
+        <div class="col-sm-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+          <h1 class="display-4 text-white" data-toggle="counter-up">10</h1>
+          <span class="text-primary">Dollar travel fee</span>
+        </div>
+        <div class="col-sm-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+          <h1 class="display-4 text-white" data-toggle="counter-up">100</h1>
+          <span class="text-primary">Percent documented work</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services Overview -->
+  <div id="services" class="container-xxl py-5">
+    <div class="container">
+      <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 640px;">
+        <p class="text-primary text-uppercase mb-2">Services</p>
+        <h2 class="display-6 mb-4">Three tracks with scoped intake and transparent pricing.</h2>
+        <p class="mb-5">Every request flows through the portal so we arrive with the right plan, timelines, and parts.</p>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="service-item h-100">
+            <div class="d-flex align-items-center bg-light px-4 py-3">
+              <div class="service-icon flex-shrink-0 bg-primary">
+                <img class="img-fluid" src="img/icon/icon-01-light.png" alt="HVAC icon" />
+              </div>
+              <h4 class="mb-0 ms-4">HVAC Systems</h4>
+            </div>
+            <div class="p-4">
+              <ul class="list-unstyled mb-4">
+                <li>Furnace & boiler diagnostics</li>
+                <li>AC charge + airflow verification</li>
+                <li>Heat loss consultations & upgrades</li>
+              </ul>
+              <a class="btn btn-outline-primary w-100" href="#process">View Process</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="service-item h-100">
+            <div class="d-flex align-items-center bg-light px-4 py-3">
+              <div class="service-icon flex-shrink-0 bg-primary">
+                <img class="img-fluid" src="img/icon/icon-02-light.png" alt="Auto icon" />
+              </div>
+              <h4 class="mb-0 ms-4">Automotive</h4>
+            </div>
+            <div class="p-4">
+              <ul class="list-unstyled mb-4">
+                <li>Brake & suspension refresh</li>
+                <li>Electrical & drivability diagnostics</li>
+                <li>Fluids, belts, charging systems</li>
+              </ul>
+              <a class="btn btn-outline-primary w-100" href="https://osindosmechanicalservices.myassembly.com/login?step=signUp" target="_blank" rel="noopener">Book Automotive Slot</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="service-item h-100">
+            <div class="d-flex align-items-center bg-light px-4 py-3">
+              <div class="service-icon flex-shrink-0 bg-primary">
+                <img class="img-fluid" src="img/icon/icon-03-light.png" alt="Mechanical icon" />
+              </div>
+              <h4 class="mb-0 ms-4">General Mechanical</h4>
+            </div>
+            <div class="p-4">
+              <ul class="list-unstyled mb-4">
+                <li>Parts sourcing & install support</li>
+                <li>Electrical troubleshooting</li>
+                <li>Specialty projects + retrofits</li>
+              </ul>
+              <a class="btn btn-outline-primary w-100" href="https://osindosmechanicalservices.myassembly.com/login?step=signUp" target="_blank" rel="noopener">Start Project Intake</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA Banner -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="bg-primary text-light p-5 rounded d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between gap-4">
+        <div>
+          <p class="text-uppercase text-white-50 mb-2">Need help fast?</p>
+          <h2 class="mb-0">Describe the issue once. I’ll handle the plan, pricing, and scheduling.</h2>
+        </div>
+        <div class="d-flex flex-wrap gap-3">
+          <a class="btn btn-light" href="https://osindosmechanicalservices.myassembly.com/login?step=signUp" target="_blank" rel="noopener">Open Customer Portal</a>
+          <a class="btn btn-outline-light" href="tel:6514173363">Call (651) 417-3363</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Process / CTA -->
+  <div id="process" class="container-fluid overflow-hidden my-5 px-lg-0">
+    <div class="container quote px-lg-0">
+      <div class="row g-0 mx-lg-0">
+        <div class="col-lg-6 quote-text" data-parallax="scroll" data-image-src="img/carousel-2.jpg">
+          <div class="h-100 px-4 px-sm-5 ps-lg-0 wow fadeIn" data-wow-delay="0.1s">
+            <h2 class="text-white mb-4">Three-step intake</h2>
+            <ul class="text-light leadflow list-unstyled">
+              <li><strong>Submit:</strong> Portal collects photos, urgency, and preferred windows.</li>
+              <li><strong>Diagnose:</strong> Combustion, airflow, and electrical data logged and shared.</li>
+              <li><strong>Document:</strong> Clear next steps, photos, and maintenance notes.</li>
+            </ul>
+            <a href="https://osindosmechanicalservices.myassembly.com/login?step=signUp" target="_blank" rel="noopener" class="btn btn-primary py-3 px-5">Open the Portal</a>
+          </div>
+        </div>
+        <div id="contact" class="col-lg-6 quote-form" data-parallax="scroll" data-image-src="img/carousel-1.jpg">
+          <div class="h-100 px-4 px-sm-5 pe-lg-0 wow fadeIn" data-wow-delay="0.5s">
+            <div class="bg-white p-4 p-sm-5">
+              <h3 class="mb-4">Quick contact</h3>
+              <p class="text-muted">Prefer a quick callback? Share a few details and we'll reply within 24 hours.</p>
+              <form class="contact-form" name="contact-form">
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="name" placeholder="Name" required />
+                      <label for="name">Your Name</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <input type="tel" class="form-control" id="phone" placeholder="Phone" required />
+                      <label for="phone">Phone</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <textarea class="form-control" placeholder="Message" id="message" style="height: 80px" required></textarea>
+                      <label for="message">Describe the issue</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary py-3 px-5 w-100" type="submit">Request Callback</button>
+                  </div>
+                </div>
+              </form>
+              <p class="form-status mt-3" role="status" aria-live="polite"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Map Section -->
+  <div id="map" class="container-xxl py-5">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-5">
+          <p class="text-primary text-uppercase mb-2">Twin Cities Service Area</p>
+          <h2 class="display-6 mb-4">Minneapolis / St. Paul + nearby suburbs.</h2>
+          <p>Priority service for the metro, with travel available to surrounding communities across Hennepin, Ramsey, Dakota, and Washington counties.</p>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="fa fa-check text-primary me-2"></i>Same-day HVAC diagnostics during weather extremes</li>
+            <li class="mb-2"><i class="fa fa-check text-primary me-2"></i>Mobile auto repairs scheduled via portal</li>
+            <li class="mb-2"><i class="fa fa-check text-primary me-2"></i>General mechanical projects scoped with bill of materials</li>
+          </ul>
+        </div>
+        <div class="col-lg-7">
+          <div class="ratio ratio-16x9 rounded overflow-hidden shadow">
+            <iframe title="Twin Cities service area" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d563890.4742340204!2d-93.87333193889302!3d44.969026232091176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b333909e17f88d%3A0xad8b9cb7568ab3b4!2sTwin%20Cities%2C%20MN!5e0!3m2!1sen!2sus!4v1709770000000!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Legal -->
+  <div class="container-xxl py-5 bg-light" id="legal">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6" id="privacy">
+          <p class="text-primary text-uppercase mb-2">Privacy Policy</p>
+          <h3 class="mb-3">How we handle your data</h3>
+          <p>Portal submissions are stored securely and only used to coordinate service, scheduling, and billing. Photos and documents shared during a project remain private and are removed upon request after work is complete.</p>
+          <ul class="list-unstyled">
+            <li><i class="fa fa-check text-primary me-2"></i>No resale of customer information</li>
+            <li><i class="fa fa-check text-primary me-2"></i>Encrypted portal communication</li>
+            <li><i class="fa fa-check text-primary me-2"></i>Documentation archived for 12 months</li>
+          </ul>
+        </div>
+        <div class="col-lg-6" id="terms">
+          <p class="text-primary text-uppercase mb-2">Terms & Conditions</p>
+          <h3 class="mb-3">Scope and expectations</h3>
+          <p>Diagnostics are billed separately from repair labor. Parts are sourced once estimates are approved inside the portal. Travel fee applies to every visit outside Minneapolis / St. Paul city limits and is waived for multi-day projects.</p>
+          <ul class="list-unstyled">
+            <li><i class="fa fa-check text-primary me-2"></i>Payment due upon delivery of documentation</li>
+            <li><i class="fa fa-check text-primary me-2"></i>Workmanship warranty for 30 days</li>
+            <li><i class="fa fa-check text-primary me-2"></i>Partner referrals billed directly</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div id="faq" class="container-xxl py-5">
+    <div class="container">
+      <div class="text-center mx-auto mb-5" style="max-width: 640px;">
+        <p class="text-primary text-uppercase mb-2">FAQ</p>
+        <h2 class="display-6 mb-4">Clarity before we roll a truck.</h2>
+        <p>Still curious? Use the portal for detailed questions and project planning.</p>
+      </div>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#answerOne" aria-expanded="true" aria-controls="answerOne">
+              How does pricing work?
+            </button>
+          </h2>
+          <div id="answerOne" class="accordion-collapse collapse show" aria-labelledby="faqOne" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Intake responses allow us to scope the labor and parts before we arrive. Travel fee is $10 metro-wide, and diagnostics are quoted upfront inside the portal for approval.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answerTwo" aria-expanded="false" aria-controls="answerTwo">
+              What happens after intake?
+            </button>
+          </h2>
+          <div id="answerTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              You receive a written plan covering diagnostics, target timelines, and requested parts. We confirm in the portal, then keep documentation updated during the job with photos.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answerThree" aria-expanded="false" aria-controls="answerThree">
+              Do you coordinate specialty trades?
+            </button>
+          </h2>
+          <div id="answerThree" class="accordion-collapse collapse" aria-labelledby="faqThree" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes. When projects require electricians, plumbers, or concrete specialists, we refer trusted partners, coordinate scheduling, and share documentation so everyone stays aligned.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-md-6">
+          <h2 class="text-white mb-4">Osindo Mechanical Services</h2>
+          <p>Licensed, insured, and diagnostics-focused. Serving Minneapolis, St. Paul, and nearby communities with HVAC, automotive, and specialty mechanical services.</p>
+        </div>
+        <div class="col-md-6">
+          <h5 class="text-light mb-4">Customer Portal</h5>
+          <p>Submit work requests, approve scopes, and review documentation in one place.</p>
+          <a class="btn btn-primary" href="https://osindosmechanicalservices.myassembly.com/login?step=signUp" target="_blank" rel="noopener">Open Portal</a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-light mb-4">Contact</h5>
+          <p><i class="fa fa-map-marker-alt me-3"></i>Twin Cities, MN</p>
+          <p><i class="fa fa-phone-alt me-3"></i>(651) 417-3363</p>
+          <p><i class="fa fa-envelope me-3"></i>support@osindo.us</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-light mb-4">Services</h5>
+          <a class="btn btn-link" href="#services">HVAC Systems</a>
+          <a class="btn btn-link" href="#services">Automotive</a>
+          <a class="btn btn-link" href="#services">General Mechanical</a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-light mb-4">Legal</h5>
+          <a class="btn btn-link" href="#privacy">Privacy Policy</a>
+          <a class="btn btn-link" href="#terms">Terms & Conditions</a>
+          <small class="text-white-50 d-block">Policies available upon request via portal.</small>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-light mb-4">Follow</h5>
+          <div class="d-flex">
+            <a class="btn btn-square rounded-circle me-1" href="https://www.linkedin.com" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+            <a class="btn btn-square rounded-circle me-1" href="https://www.instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+            <a class="btn btn-square rounded-circle me-1" href="https://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 text-center text-md-start mb-3 mb-md-0">
+            &copy; <span id="year"></span> Osindo Mechanical Services. All rights reserved.
+          </div>
+          <div class="col-md-4 text-center text-md-end">
+            Built on the Aircon template by <a href="https://htmlcodex.com" target="_blank" rel="noopener">HTML Codex</a>.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#home" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/parallax/parallax.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
