@@ -1,3 +1,10 @@
+> ## ⛔️ ARCHIVED — not maintained
+>
+> This repository is read-only. It is kept for reference and history.
+> Duncans Mechanical / Osindo landing page. Client engagement ended; osindo.com is a parked domain.
+>
+> Archived 2026-09-04.
+
 # Osindo Mechanical Services
 
 Landing page for Osindo Mechanical Services (HVAC, auto, and mechanical repair in the Twin Cities).
