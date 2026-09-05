@@ -1,16 +1,12 @@
-> ## ⛔️ ARCHIVED — not maintained
->
-> This repository is read-only. It is kept for reference and history.
->
-> Duncans Mechanical / Osindo landing page. Client engagement ended; osindo.com is a parked domain.
->
-> Archived 2026-09-04.
+> [!WARNING]
+> ## ⛔️ ARCHIVED — no longer maintained
+> This repository is read-only and kept for reference and history. Duncans Mechanical / Osindo landing page. Client engagement ended; osindo.com is a parked domain. Archived 2026-09-04.
 
 # OSINDO
 
 **What it was:** Duncans Mechanical / Osindo landing page. Client engagement ended; osindo.com is a parked domain.
 
-**Status:** archived 2026-09-04 · last push 2026-09-04 · JavaScript · no releases, no support. 
+**Why it is archived:** no longer maintained — archived because the work either shipped elsewhere or stopped; superseded by the live products listed at github.com/ever-just. Use the successor instead. Last push 2026-09-05 · JavaScript · no releases, no support.
 
 ## Structure and layout
 
@@ -18,7 +14,6 @@ Top level as archived:
 
 - `.gitignore`
 - `GODADDY_INTEGRATION.md`
-- `README.md`
 - `assets`/
 - `css`/
 - `img`/
@@ -26,5 +21,6 @@ Top level as archived:
 - `js`/
 - `legacy-index.html`
 - `lib`/
+- `manifest.json`
 
 Nothing here is deployed or built; there is no install or usage path.
